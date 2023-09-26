@@ -7,11 +7,14 @@ import About from 'screens/About';
 import Contact from 'screens/Contact';
 import Login from 'screens/Login';
 import DetailsPage from 'screens/DetailsPage';
+import LoginHandle from 'components/LoginHandle';
+
 
 
 function App() {
   return (
       <BrowserRouter>
+      <LoginHandle/>
         <Routes>
           <Route exact path="/" element={<Collection/>}></Route>
           <Route exact path="/women" element={<Women/>}></Route>
