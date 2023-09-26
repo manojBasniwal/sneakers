@@ -1,0 +1,66 @@
+.bg-body-tertiary {
+    position: relative;
+    background-color: white !important;
+}
+
+.navbrand {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    padding-bottom: 12px;
+}
+
+.item {
+    padding: 29px 0 29px;
+    margin-inline: 10px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 18px;
+    border: none;
+}
+
+.navbar>.container {
+    border-bottom: 1px solid black;
+    padding: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 29px 0 29px;
+    margin-inline: 10px;
+    border-bottom: 2px solid transparent;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+    color: black !important;
+}
+
+.item:hover {
+    border-bottom: 2px solid red;
+    color: black;
+}
+
+.fa-cart-shopping {
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+.btn-logout{
+    border: none;
+    border-radius: 20px;
+    background-color: orange;
+    color: white;
+    padding: 2px 10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:992px) {
+    .navbrand {
+        margin-left: 60px;
+    }
+}

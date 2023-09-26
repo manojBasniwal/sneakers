@@ -1,0 +1,1 @@
+export const LOGIN_DETAILS= {name:"manoj", password:"7611829168"}

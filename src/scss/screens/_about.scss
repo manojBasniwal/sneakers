@@ -1,0 +1,57 @@
+.about-section {
+    background-color: rgb(24, 32, 42);
+    color: white;
+
+    .about-self {
+        padding: 60px 0;
+
+        .about-paragraph {
+            font-size: 22px;
+        }
+    }
+
+    .leadership-principles {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px 14px;
+        background-color: rgb(35, 47, 62);
+
+        .card-heading{
+            margin-bottom: 30px;
+            color:rgb(220,153,0) ;
+        }
+
+        .card-paragraph {
+            padding-bottom: 30px;
+            margin: 0;
+            flex: 1 1;
+        }
+
+        .btn {
+            color: white;
+            border: 1px solid rgb(112,115,121);
+            border-radius: 20px;
+            padding: 10px 15px;
+            font-size: 14px;
+            width: 139px;
+        }
+    }
+
+    .img-section {
+        padding: 40px 0;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+            max-height: 773px;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .col-12 {
+        margin-bottom: 25px;
+    }
+}

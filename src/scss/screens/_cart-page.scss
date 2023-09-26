@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.women-section {
+    padding-block: 50px;
+
+    .women-carousel-section {
+        .carousel .slide img {
+            height: 340px;
+            max-width: 340px;
+            border-radius: 10px;
+        }
+
+        .carousel .thumb img {
+            height: 70px;
+            border-radius: 10px;
+        }
+
+        .carousel .thumb.selected {
+            border-radius: 10px;
+        }
+
+        .carousel .control-dots {
+            display: none;
+        }
+
+        .carousel .carousel-status {
+            display: none;
+        }
+
+        .carousel .thumbs {
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    .women-text-section {
+        .text-box {
+            padding-top: 30px;
+
+            .sneaker {
+                color: orange;
+            }
+
+            .prize-section {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .prize {
+                    font-size: 23px;
+                    font-weight: bold;
+                    margin-right: 25px;
+                }
+
+                .percentage {
+                    background-color: #ffc0cb42;
+                    color: orange;
+                    border-radius: 5px;
+                    text-align: center;
+                    justify-content: center;
+                    display: flex;
+                    align-items: center;
+                    padding: 1px 7px;
+                }
+
+                .fa-sharp {
+                    color: red;
+                    font-size: 20px;
+                    cursor: pointer;
+                }
+            }
+
+            .old-prize {
+                text-decoration: line-through;
+                color: #8080809e;
+                margin-bottom: 20px;
+            }
+
+                .increment-button {
+                    font-size: 23px;
+                    width: 140px;
+                    height: 43px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    font-weight: bold;
+                    background-color: #d3d3d37a;
+                    border-radius: 8px;
+
+                    .decrement:hover {
+                        cursor: pointer;
+                        color: #FF9800;
+                    }
+
+                    .increment:hover {
+                        cursor: pointer;
+                        color: #FF9800;
+                    }
+                }
+
+                .add-button {
+                    background-color: #FF9800;
+                    color: white;
+                    padding: 0 65px;
+                    margin-left: 15px;
+                }
+        }
+    }
+}
+
+.cart-main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+    flex-direction: column;
+
+        .image {
+            width: 8rem;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 23px;
+            cursor: pointer;
+            color: red;
+        }
+}
+
+@media screen and (max-width:992px) {
+    .btn.add-button {
+        padding: 0 29px !important;
+    }
+}
