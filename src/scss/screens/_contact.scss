@@ -1,13 +1,19 @@
-.contact-form {
-    width: 390px;
-    margin: 0 auto;
-    border: 1px solid #80808082;
-    padding: 20px 20px 30px;
-    border-radius: 10px;
-
-    .btn {
-        width: 100%;
-        background-color: #ffff00b8;
-        margin-top: 20px;
+.contact-section{
+    .my-contact-section{
+        text-align: center;
+        padding: 10px;
+        strong{
+            padding-bottom: 6px;
+            border-bottom: 2px solid gray;
+        }
+    }
+    .contact-form-section{
+        padding: 10px;
+        background-color:  #ff8c00d4;
+        border-radius: 5px;
+        .btn{
+            background-color: white;
+            border-radius: 20px;
+        }
     }
 }

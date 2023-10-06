@@ -1,4 +1,3 @@
-// import { Send } from '@mui/icons-material';
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -8,7 +7,6 @@ import { useNavigate } from 'react-router';
 import { DETAIL } from '../../redux/actions/detailAction';
 
 function Cards({details}) {
-    // console.warn('details',details)
     
     const dispatch = useDispatch();
     const navigate = useNavigate();

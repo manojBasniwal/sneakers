@@ -7,7 +7,7 @@ function men() {
   return (
     <PageWidthNavbar>
         <div className="container">
-            <h1 className='text-center'>Men Collection</h1>
+            <h1 className='text-center mt-3'>Men Collection</h1>
             <div className='row d-flex justify-content-center align-items-center'>
                 {
                     data.map((detail) => {

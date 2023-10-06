@@ -27,7 +27,7 @@ function WomenDetails() {
     }
 
     const handleOnClick = (e, obj) => {
-        e.stopPropagation();
+        // e.stopPropagation();
         dispatch(DETAIL(obj))
         navigate('/details')
     }
@@ -44,7 +44,7 @@ function WomenDetails() {
                                 return (
                                     <>
                                         <div className="row mt-3 mb-5 iteamsdetails">
-                                            <div className="women-carousel-section col-12 col-md-6" onClick={(e) => handleOnClick(e, details)}>
+                                            <div className="women-carousel-section col-12 col-md-6">
                                                 <Carousel showArrows={false} >
                                                     {
                                                         details.images.map((ele) =>
@@ -58,16 +58,16 @@ function WomenDetails() {
                                             <div className="women-text-section col-12 col-md-6">
                                                 <div className="text-box">
                                                     <p className="sneaker">{details.titleName}</p>
-                                                    <h1 className="mb-4">{details.heading}</h1>
+                                                    <h1 className="cart-heading" onClick={(e) => handleOnClick(e, details)}>{details.heading}</h1>
                                                     <p>{details.paragraph}</p>
                                                     <div className="prize-section">
                                                         <div className='d-flex'>
-                                                            <span className="prize">${details.price}</span>
+                                                            <span className="prize">${details.price * details.qnty}</span>
                                                             <span className="percentage">{details.discount}</span>
                                                         </div>
                                                         <span className="me-5"><i className="fa-sharp fa-solid fa-trash" onClick={() => dlt(details.id)}></i></span>
                                                     </div>
-                                                    <h6 className='old-prize'>${details.oldPrice}.00</h6>
+                                                    <h6 className='old-prize'>${details.oldPrice * details.qnty}.00</h6>
                                                     <p className='mb-4'><strong>Quantity</strong> : {details.qnty}</p>
                                                     <div className='increment-button'>
                                                         <span className="decrement" onClick={details.qnty <= 1 ? () => dlt(details.id) : () => remove(details)}>-</span>

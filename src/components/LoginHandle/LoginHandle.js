@@ -1,9 +1,10 @@
 import {useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { LOGIN_DETAILS } from "../../constants";
 
 function LoginHandle() {
     const navigate = useNavigate('');
+    const location = useLocation()
 
 
     useEffect(()=>{
@@ -11,7 +12,9 @@ function LoginHandle() {
         if(!loginData || (loginData?.name !== LOGIN_DETAILS.name && loginData?.password !== LOGIN_DETAILS.password)){
             navigate('/login')
         }else{
+            if(location.pathname === "/login"){
                 navigate('/')
+            }
         }
     }, []);
   return null
