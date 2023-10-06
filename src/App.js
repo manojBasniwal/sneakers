@@ -1,6 +1,6 @@
 import CartPage from 'screens/CartPage';
 import Women from './screens/Women';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
+import {Routes, Route, HashRouter} from "react-router-dom";
 import Men from './screens/Men';
 import Collection from 'screens/Collection';
 import About from 'screens/About';
@@ -13,7 +13,7 @@ import LoginHandle from 'components/LoginHandle';
 
 function App() {
   return (
-      <BrowserRouter>
+      <HashRouter>
       <LoginHandle/>
         <Routes>
           <Route exact path="/" element={<Collection/>}></Route>
@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/contact" element={ <Contact/>}/>
           <Route exact path="/login" element={ <Login/>}/>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
   );
 }
 
