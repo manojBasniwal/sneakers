@@ -16,14 +16,14 @@ function App() {
       <BrowserRouter>
       <LoginHandle/>
         <Routes>
-          <Route exact path="sneakers/" element={<Collection/>}></Route>
-          <Route exact path="sneakers/women" element={<Women/>}></Route>
-          <Route exact path="sneakers/cart" element={<CartPage/>}/>
-          <Route exact path="sneakers/details" element={<DetailsPage/>}/>
-          <Route exact path="sneakers/men" element={<Men/>}/>
-          <Route exact path="sneakers/about" element={<About/>}/>
-          <Route exact path="sneakers/contact" element={ <Contact/>}/>
-          <Route exact path="sneakers/login" element={ <Login/>}/>
+          <Route exact path="/" element={<Collection/>}></Route>
+          <Route exact path="/women" element={<Women/>}></Route>
+          <Route exact path="/cart" element={<CartPage/>}/>
+          <Route exact path="/details" element={<DetailsPage/>}/>
+          <Route exact path="/men" element={<Men/>}/>
+          <Route exact path="/about" element={<About/>}/>
+          <Route exact path="/contact" element={ <Contact/>}/>
+          <Route exact path="/login" element={ <Login/>}/>
         </Routes>
       </BrowserRouter>
   );
